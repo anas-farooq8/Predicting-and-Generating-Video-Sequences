@@ -6,6 +6,31 @@ The ConvLSTM model is built using a series of ConvLSTM cells, which apply convol
 
 ---
 
+## Table of Contents
+
+1. [Model Architecture](#model-architecture)
+   - [ConvLSTMModel](#convlstmmodel)
+   - [Detailed Explanation of the Architecture](#detailed-explanation-of-the-architecture)
+   - [ConvLSTM Cell](#convlstm-cell)
+   - [Final Convolution Layer](#final-convolution-layer)
+2. [ConvLSTM in Sequence Prediction](#convlstm-in-sequence-prediction)
+   - [Structure of ConvLSTM for Sequence Prediction](#structure-of-convlstm-for-sequence-prediction)
+   - [How ConvLSTM is Used in Sequence Prediction](#how-convlstm-is-used-in-sequence-prediction)
+   - [Example](#example)
+3. [Training and Evaluation](#training-and-evaluation)
+   - [Loss Functions](#loss-functions)
+   - [Learning Rate Scheduler](#learning-rate-scheduler)
+   - [Early Stopping](#early-stopping)
+4. [Dataset](#dataset)
+   - [Input Shape](#input-shape)
+   - [Output Shape](#output-shape)
+5. [Training](#training)
+   - [Key Components](#key-components)
+   - [Training Loop](#training-loop)
+6. [Evaluation](#evaluation)
+
+---
+
 ## Model Architecture
 
 The core of the model consists of a multi-layer ConvLSTM network followed by a final convolutional layer to generate the output frames. Below is the breakdown of the architecture:
